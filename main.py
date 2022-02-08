@@ -5,7 +5,10 @@
 print('Classic Calculator')
 print('Enter there: ', end='\n')
 
-# Future Summa Function
+# Future Multi Function
 num1, num2, = int(input()), int(input())
+print('')
 print(f'{num1} + {num2} = {num1 + num2}')
-
+print(f'{num1} - {num2} = {num1 - num2}')
+print(f'{num1} * {num2} = {num1 * num2}')
+print(f'{num1} / {num2} = {num1 / num2}')

@@ -5,7 +5,7 @@
 print('Classic Calculator')
 print('Enter there: ', end='\n')
 
-# Sum func
+# Summa Function
 firstNumber = int(input())
 print('+')
 secondNumber = int(input())

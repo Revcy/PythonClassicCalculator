@@ -5,10 +5,7 @@
 print('Classic Calculator')
 print('Enter there: ', end='\n')
 
-# Summa Function
-firstNumber = int(input())
-print('+')
-secondNumber = int(input())
-print('=')
-summa = firstNumber + secondNumber
-print(summa)
+# Future Summa Function
+num1, num2, = int(input()), int(input())
+print(f'{num1} + {num2} = {num1 + num2}')
+

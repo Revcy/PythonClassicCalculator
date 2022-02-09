@@ -3,12 +3,23 @@
 # First big practic project
 
 print('Classic Calculator')
-print('Enter there: ', end='\n')
+func_choice = str(input('Select Function (sum = +; dct = -; inc = *; spl = /.): '))
 
-# Future Multi Function
-num1, num2, = int(input()), int(input())
-print('')
-print(f'{num1} + {num2} = {num1 + num2}')
-print(f'{num1} - {num2} = {num1 - num2}')
-print(f'{num1} * {num2} = {num1 * num2}')
-print(f'{num1} / {num2} = {num1 / num2}')
+# Four math functions
+if func_choice == 'sum':
+    num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
+    print(f'{num1} + {num2} = {num1 + num2}')
+
+if func_choice == 'dct':
+    num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
+    print(f'{num1} - {num2} = {num1 - num2}')
+
+if func_choice == 'inc':
+    num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
+    print(f'{num1} * {num2} = {num1 * num2}')
+
+if func_choice == 'spl':
+    num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
+    print(f'{num1} / {num2} = {num1 / num2}')
+
+

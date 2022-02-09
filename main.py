@@ -3,7 +3,7 @@
 # First big practic project
 
 print('Classic Calculator')
-func_choice = str(input('Select Function (sum = +; dct = -; inc = *; spl = /.): '))
+func_choice = str(input('Select Function (sum = +; dct = -; inc = *; spl = /): '))
 
 # Four math functions
 if func_choice == 'sum':

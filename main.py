@@ -1,6 +1,6 @@
 # Classic Calculator on Python 3
 # Developer: github.com/Revcy
-# First big practic project
+# First big practice project
 
 print('Classic Calculator')
 print('')
@@ -23,4 +23,4 @@ elif func_choice == '/':
     else:
         print("Math error: Don't split to zero")
 else:
-    print('Script error with math function')
+    print("Script error: Symbol operation not found")

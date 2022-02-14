@@ -3,23 +3,24 @@
 # First big practic project
 
 print('Classic Calculator')
-func_choice = str(input('Select Function (sum = +; dct = -; inc = *; spl = /): '))
+print('')
+func_choice = str(input('Select Function (+; -; *; /): '))
 
 # Four math functions
-if func_choice == 'sum':
+if func_choice == '+':
     num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
     print(f'{num1} + {num2} = {num1 + num2}')
-
-if func_choice == 'dct':
+elif func_choice == '-':
     num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
     print(f'{num1} - {num2} = {num1 - num2}')
-
-if func_choice == 'inc':
+elif func_choice == '*':
     num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
     print(f'{num1} * {num2} = {num1 * num2}')
-
-if func_choice == 'spl':
+elif func_choice == '/':
     num1, num2, = int(input('First Value: ')), int(input('Second Value: '))
-    print(f'{num1} / {num2} = {num1 / num2}')
-
-
+    if num2 != 0:
+        print(f'{num1} / {num2} = {num1 / num2}')
+    else:
+        print("Math error: Don't split to zero")
+else:
+    print('Script error with math function')

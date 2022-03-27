@@ -1,5 +1,3 @@
-# Classic Calculator on Python 3
-
 print('Classic Calculator')
 print('')
 
@@ -22,14 +20,13 @@ while True:
         print("Script error: Symbol operation not found")
     while True:
         quit_promt = input('You wanna exit? (Yes, No): ')
-        if quit_promt == 'Yes':
+        if quit_promt in ['Yes', 'YES', 'yes']:
             quit_flag = True
             break
-        elif quit_promt == 'No':
+        elif quit_promt in ['No', 'NO', 'no']:
             quit_flag = False
             break
         else:
             print('Unknown input. Try again: ')
     if quit_flag:
         break
-    
